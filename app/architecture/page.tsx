@@ -65,10 +65,10 @@ export default function ArchitecturePage() {
       </p>
       <Mermaid chart={ORG_CHART} />
 
-      <h2>How you work in a repo (dev workflow)</h2>
+      <h2>How you work in a repo</h2>
       <p>
-        Daily work happens on a branch cut from <code>dev</code>. A pull
-        request merges back into <code>dev</code> after CI and the supervisor
+        Daily work happens on a branch cut from <code>develop</code>. A pull
+        request merges back into <code>develop</code> after CI and the supervisor
         sign off. <code>main</code> changes only through a release pull request.
       </p>
       <DevWorkflow />
