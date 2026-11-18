@@ -47,10 +47,10 @@ export default function WorkflowPage() {
         </li>
         <li>Validate, commit, and push:</li>
       </ol>
-      <pre className="pre">{`git switch -c add-<username>
+      <pre className="pre">{`git checkout -b add-<username>
 npm install
 npm run validate
-git add participants/2026-nov/<username>.md
+git add .
 git commit -m "add: Your Name to the workshop wall"
 git push -u origin HEAD`}</pre>
       <p>

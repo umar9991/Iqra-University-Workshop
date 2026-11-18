@@ -7,34 +7,34 @@ import Mermaid from "@/components/Mermaid";
 const ORG_CHART = `flowchart TB
   ORG["Iqra-University — GitHub Organization"]
 
-  subgraph CS["cs-fyp-fall-2026 · Computer Science"]
+  subgraph CS["Computer Science · Fall 2026"]
     direction TB
-    subgraph CSR1["repo: ai-lawyer"]
-      C1M1["Member 1"]
-      C1M2["Member 2"]
-      C1M3["Member 3"]
+    subgraph CSR1["repo: Law app"]
+      C1M1["Ayesha Khan"]
+      C1M2["Faraz Ahmed"]
+      C1M3["Abdul Rehman"]
       C1S["Supervisor"]
     end
-    subgraph CSR2["repo: mediscan"]
-      C2M1["Member 1"]
-      C2M2["Member 2"]
-      C2M3["Member 3"]
+    subgraph CSR2["repo: Medical app"]
+      C2M1["Ali Hassan"]
+      C2M2["Ahmed Ali"]
+      C2M3["Hamza Ishtiaq"]
       C2S["Supervisor"]
     end
   end
 
-  subgraph SE["se-fyp-fall-2026 · Software Engineering"]
+  subgraph SE["Software Engineering · Fall 2026"]
     direction TB
-    subgraph SER1["repo: campus-connect"]
-      S1M1["Member 1"]
-      S1M2["Member 2"]
-      S1M3["Member 3"]
+    subgraph SER1["repo: Campus app"]
+      S1M1["Ahmed Khan"]
+      S1M2["Shehryar Ahmed"]
+      S1M3["Tariq Jamil Khan"]
       S1S["Supervisor"]
     end
-    subgraph SER2["repo: exam-portal"]
-      S2M1["Member 1"]
-      S2M2["Member 2"]
-      S2M3["Member 3"]
+    subgraph SER2["repo: Exam app"]
+      S2M1["Usman Aslam"]
+      S2M2["Mohsin Ali"]
+      S2M3["Umar Ahmad"]
       S2S["Supervisor"]
     end
   end

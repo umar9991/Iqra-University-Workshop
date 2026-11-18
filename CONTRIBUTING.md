@@ -25,7 +25,7 @@ about five minutes.
    ```
 5. Commit and push:
    ```bash
-   git add participants/2026-nov/<your-github-username>.md
+   git add .
    git commit -m "add: <Your Name> to the workshop wall"
    git push
    ```
