@@ -1,9 +1,8 @@
----
 name: Ramah Ishtiaq
 github: ramahishtiaq-ux
-id: "123456"
+id: "45049"
 semester: 6
 department: Computer Science
-skills: [CSS, JavaScript, Figma]
+skills: [Python, HTML, CSS, JavaScript, Figma]
 ---
-I am learning web development and enjoy creating designs.
+First pull request, first card on the wall. Learning web development one commit at a time.
