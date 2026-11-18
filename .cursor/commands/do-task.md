@@ -27,7 +27,7 @@ Follow these steps:
 4. Show them the finished file, then give them the exact commands to submit it:
 
    ```bash
-   git add participants/2026-nov/<github-username>.md
+   git add .
    git commit -m "add: <Full Name> to the workshop wall"
    git push
    ```

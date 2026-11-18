@@ -63,12 +63,8 @@ export const GIT_GROUPS: GitGroup[] = [
     note: "A commit is a saved checkpoint with a message. Stage the file first, then commit.",
     commands: [
       {
-        command: "git add participants/2026-nov/<username>.md",
-        purpose: "Stages one card file. Do not stage anyone else's file.",
-      },
-      {
-        command: "git add -p",
-        purpose: "Walks through each hunk so you can stage only the lines you mean to keep.",
+        command: "git add .",
+        purpose: "Stages every change in this folder.",
       },
       {
         command: 'git commit -m "add: Your Name to the workshop wall"',
@@ -86,12 +82,12 @@ export const GIT_GROUPS: GitGroup[] = [
     note: "Do the work on a branch. Leave main clean so you can pull updates.",
     commands: [
       {
-        command: "git switch main",
+        command: "git checkout main",
         purpose: "Moves you onto the main branch.",
       },
       {
-        command: "git switch -c add-<username>",
-        purpose: "Creates a new branch for your card and switches to it.",
+        command: "git checkout -b add-<username>",
+        purpose: "Creates a new branch for your card and checks it out.",
       },
       {
         command: "git branch",
@@ -124,7 +120,7 @@ export const GIT_GROUPS: GitGroup[] = [
     note: "The exact sequence for a card. Replace <username> with your GitHub username in lowercase. One new file. Do not edit anyone else's.",
     commands: [
       {
-        command: "git switch -c add-<username>",
+        command: "git checkout -b add-<username>",
         purpose: "Starts a branch named for your card.",
       },
       {
@@ -136,8 +132,8 @@ export const GIT_GROUPS: GitGroup[] = [
         purpose: "Checks every card file against the schema before you commit.",
       },
       {
-        command: "git add participants/2026-nov/<username>.md",
-        purpose: "Stages only your new file.",
+        command: "git add .",
+        purpose: "Stages every change in this folder.",
       },
       {
         command: 'git commit -m "add: Your Name to the workshop wall"',
