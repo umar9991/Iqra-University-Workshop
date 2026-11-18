@@ -15,8 +15,8 @@ function center(index: number) {
 
 const BRANCH: { lines: string[] }[] = [
   { lines: ["1 · Clone the repo", "git clone"] },
-  { lines: ["2 · Switch to dev + update", "git checkout dev", "git pull"] },
-  { lines: ["3 · Branch off dev", "git checkout -b", "feature-x"] },
+  { lines: ["2 · Switch to develop", "git checkout develop", "git pull"] },
+  { lines: ["3 · Branch off develop", "git checkout -b", "feature-x"] },
   { lines: ["4 · Build and commit", "git add · git commit"] },
   { lines: ["5 · Push the branch", "git push origin", "feature-x"] },
 ];
@@ -25,10 +25,10 @@ const BRANCH: { lines: string[] }[] = [
 // and the review loop is a short line up to step 4.
 const RELEASE: { lines: string[]; marked?: boolean }[] = [
   { lines: ["main · protected", "permanent record"], marked: true },
-  { lines: ["9 · Release PR", "dev into main", "supervisor approves"] },
-  { lines: ["8 · Merge into dev", "integration branch"] },
+  { lines: ["9 · Release PR", "develop into main", "supervisor approves"] },
+  { lines: ["8 · Merge into develop", "integration branch"] },
   { lines: ["7 · CI checks +", "Supervisor review"] },
-  { lines: ["6 · Open Pull Request", "into dev"] },
+  { lines: ["6 · Open Pull Request", "into develop"] },
 ];
 
 function Step({
@@ -76,7 +76,7 @@ function Step({
 export default function DevWorkflow() {
   const mid = Y2 + H / 2;
   return (
-    <div className="diagram-scroll" role="img" aria-label="Dev workflow from clone to main">
+    <div className="diagram-scroll" role="img" aria-label="Workflow from clone through develop to main">
       <svg className="flow-figure" viewBox="0 0 984 424" role="presentation">
         <defs>
           <marker id="dev-flow-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
