@@ -23,7 +23,7 @@ export default function WorkflowPage() {
         <li>
           Path: <code>participants/2026-nov/&lt;github-username&gt;.md</code>
         </li>
-        <li>Username in the filename is lowercase, so the avatar URL resolves.</li>
+        <li>Username in the filename is lowercase, matching the GitHub username.</li>
         <li>Keep the frontmatter keys: name, github, id, semester, department, skills.</li>
       </ul>
 

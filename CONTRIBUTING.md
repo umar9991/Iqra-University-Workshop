@@ -35,7 +35,6 @@ about five minutes.
 
 - **One new file per person.** Never edit someone else's file — separate files
   are what keep everyone conflict-free.
-- Use your **GitHub username** (lowercase) as the file name, so your avatar
-  loads automatically.
+- Use your **GitHub username** (lowercase) as the file name.
 
 Once a maintainer merges your PR, your card appears on the wall automatically.

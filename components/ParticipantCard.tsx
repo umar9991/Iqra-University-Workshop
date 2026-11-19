@@ -1,6 +1,5 @@
 import type { Participant } from "@/lib/types";
 import { labelCohort, semesterShort } from "@/lib/format";
-import Avatar from "./Avatar";
 
 export default function ParticipantCard({
   p,
@@ -17,7 +16,6 @@ export default function ParticipantCard({
       <article className="card">
         {semester && <span className="sem-pill">{semester}</span>}
         <div className="card-top">
-          <Avatar username={p.username} name={p.name} size={64} />
           <div className="card-name">
             <p className="card-cohort">{labelCohort(p.cohort)}</p>
             <h3>{p.name || p.username}</h3>
